@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+      <form>
+          <label>Number 1:</label>
+          <input type="text" id="first">
+          <label>Number 2:</label>
+          <input type="text" id="second">
+         <button type="button" id='myButton'>Add</button>
+      </form>
+
+      <br>
+      <h3 id='myHeader'></h3>
+
+
+      <script>
+         const btn = document.getElementById('myButton')
+         
+         
+         btn.addEventListener('click', (e)=> {
+         let number1 = document.getElementById('first').value
+         let number2 = document.getElementById('second').value
+         number1 = parseInt(number1)
+         number2 = parseInt(number2)
+         let total = number1 + number2
+         myHeader.innerText = (number1 + " + " + number2 + " = " + total)
+         });
+      </script>
+    </body>
+</html>

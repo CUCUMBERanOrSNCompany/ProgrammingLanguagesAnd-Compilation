@@ -1,0 +1,2 @@
+CD to directory
+browser-sync start --server --directory --files "**/*"
